@@ -1,39 +1,33 @@
-# Portfolio Website
+# Mohd Zahid — Mobile App Developer
 
-This is a static portfolio website built with plain HTML and CSS. It is designed to be hosted directly on GitHub Pages without any build steps.
+Personal portfolio showcasing cross-platform Flutter apps and native Android projects. The site features project case studies, app screenshots, my background and technical skills, and links to my profiles and resume.
 
-## How to Deploy to GitHub Pages
+## Featured Projects
 
-1.  **Create a GitHub Repository:**
-    *   Log in to GitHub and create a new public repository.
-    *   Name it exactly `<yourusername>.github.io` (replace `<yourusername>` with your actual GitHub username). This creates a "User Page" which maps to your root URL.
-    *   Alternatively, you can name it `portfolio` (or anything else), but then your URL will be `https://<yourusername>.github.io/portfolio/`.
+- **[SplitPay](projects/splitpay.html)** — A group expense app built with Flutter, Riverpod, and Firebase. It tracks shared expenses and simplifies balances into settlements.
+- **[Tech Articles](projects/tech-articles.html)** — A responsive Flutter reader for DEV.to, with tag filtering, bookmarks, and offline caching.
+- **[SocioNet](projects/socionet.html)** — A native Android residential community app built with Kotlin, Jetpack Compose, and Firebase, with role-based resident, admin, and security workflows.
 
-2.  **Upload Files:**
-    *   Push or upload all the files from this project (including the `projects/` folder and `assets/` folder) to the `main` (or `master`) branch of your new repository.
+Visit the [projects page](projects.html) to browse the case studies and screenshots, or read more [about me](about.html).
 
-3.  **Enable GitHub Pages:**
-    *   Go to your repository on GitHub.
-    *   Click on the **Settings** tab.
-    *   Scroll down to the **Pages** section in the left sidebar.
-    *   Under "Build and deployment", set **Source** to `Deploy from a branch`.
-    *   Under **Branch**, select `main` (or `master`) and the `/ (root)` folder.
-    *   Click **Save**.
-    *   Wait a few minutes. GitHub will provide you with the URL (e.g., `https://<yourusername>.github.io/`). Visit the URL to see your live site.
+## About
 
-4.  **Custom Domain (Later):**
-    *   In the **Pages** settings, enter your custom domain under the **Custom domain** field (e.g., `www.yourdomain.com`). Click **Save**.
-    *   Go to your domain registrar (e.g., Namecheap, GoDaddy) and add the appropriate DNS records (CNAME or A records) as instructed by GitHub. 
-    *   Ensure you check **Enforce HTTPS** once the certificate is provisioned.
-    *   GitHub will automatically create a `CNAME` file in your repository root. Do not delete it.
+I build practical mobile experiences with an emphasis on clear architecture, responsive interfaces, and reliable data access. My toolkit includes Flutter and Dart, Kotlin and Jetpack Compose, Riverpod, Firebase, Room, REST APIs, and automated tests.
 
-5.  **Updating the Site:**
-    *   Whenever you want to update text or add a project, simply edit the `.html` files locally, commit the changes, and push to the `main` branch. GitHub Pages will automatically update within a few minutes.
+- [GitHub](https://github.com/TheLegendZK)
+- [LinkedIn](https://www.linkedin.com/in/thelegendz)
+- [Email](mailto:zahidkamil505@gmail.com)
+- [Resume (PDF)](assets/Zahid_Kamil_Resume.pdf)
 
-## Before Launch and Ongoing Maintenance
+## Run Locally
 
-* Replace the example GitHub username and custom-domain values in this guide with the actual hosting details. Add canonical URLs, Open Graph URLs, and a `sitemap.xml` only after the public site URL is known; do not publish placeholder URLs.
-* In the repository's **Settings > Pages**, enable **Enforce HTTPS** after GitHub provisions the certificate. Confirm the deployed site and all pages load over HTTPS.
-* Before and after significant content changes, check the deployed site on narrow and wide screens, use Lighthouse for performance and accessibility checks, and verify that navigation and project images work.
-* This site is static and currently has no forms or analytics. If adding either, choose a provider deliberately, disclose data collection in a privacy notice, and verify its security and accessibility.
-* Keep project details, links, and screenshots current. Recheck the GitHub Pages deployment status when a release does not appear.
+This is a static website made with HTML, CSS, and a small amount of JavaScript. There is no build step or package installation required.
+
+1. Clone or download this repository.
+2. Open `index.html` in a browser, or serve the project directory with any local static web server.
+
+The main pages are `index.html`, `projects.html`, and `about.html`. Individual project case studies are in `projects/`, shared styling is in `style.css`, and project screenshots and the resume are in `assets/`.
+
+## Deploy
+
+The site can be hosted on GitHub Pages or any static web host. For GitHub Pages, push the repository to GitHub, then select the branch and root folder under **Settings → Pages**. The site will be published at the URL shown in those settings.
