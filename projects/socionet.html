@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocioNet - Mohd Zahid</title>
+  <meta name="description" content="Case study of SocioNet, a native Android residential society management app built with Kotlin, Jetpack Compose, and Firebase.">
+  <meta property="og:title" content="SocioNet - Mohd Zahid">
+  <meta property="og:description" content="Case study of SocioNet, a native Android residential society management app built with Kotlin, Jetpack Compose, and Firebase.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header>
+    <div class="container">
+      <a href="../index.html" class="site-title">Mohd Zahid</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <a class="breadcrumb" href="../projects.html"><span aria-hidden="true">&larr;</span>&nbsp; All projects</a>
+    <h1>SocioNet</h1>
+    <p class="tags">Kotlin, Jetpack Compose, Firebase, Room DB, Hilt</p>
+    <div class="hero-actions">
+      <a href="https://github.com/TheLegendZK/SocioNet_A-Society-Management-System" class="btn">View source on GitHub</a>
+      <a href="mailto:zahidkamil505@gmail.com?subject=SocioNet%20demo%20request" class="text-link">Request a demo</a>
+    </div>
+    
+    <h2>App Screenshots</h2>
+    <div class="image-gallery">
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Welcome screen screenshot">
+          <img src="../assets/img/SocioNet_Splash.jpg" alt="SocioNet splash screen with loading indicator" width="1080" height="2400" loading="eager" fetchpriority="high" decoding="async">
+        </button>
+        <figcaption>Welcome screen</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Login screenshot">
+          <img src="../assets/img/SocioNet_Login.jpg" alt="SocioNet login screen" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Login</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Resident home screenshot">
+          <img src="../assets/img/SocioNet_ResidentHome.jpg" alt="SocioNet resident home screen showing recent notices" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Resident home</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Admin dashboard screenshot">
+          <img src="../assets/img/SocioNet_AdminDashboard.jpg" alt="SocioNet administrator dashboard" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Admin dashboard</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Gatekeeper QR scanner screenshot">
+          <img src="../assets/img/SocioNet_SecurityScanner.jpg" alt="SocioNet gatekeeper QR code scanner screen" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Gatekeeper QR scanner</figcaption>
+      </figure>
+    </div>
+
+    <div class="case-study-section">
+      <h2>Problem</h2>
+      <p>Residential communities often need one place to coordinate visitor access, staff information, and resident complaints. SocioNet brings these day-to-day management tasks into a role-based Android app.</p>
+    </div>
+
+    <div class="case-study-section">
+      <h2>What I Did</h2>
+      <ul>
+        <li>Built a native Android application using <strong>Jetpack Compose</strong> and <strong>MVVM Clean Architecture</strong> featuring role-based dashboards, visitor tracking, staff registries, and complaint management modules.</li>
+        <li>Integrated <strong>Room Database DAOs</strong> with <strong>Cloud Firestore</strong> to provide offline data caching and injected dependencies across layers using <strong>Dagger Hilt</strong>.</li>
+        <li>Implemented a <strong>Gatekeeper QR code scanner</strong> workflow for fast visitor verification at residential society gates.</li>
+        <li>Separated <strong>Resident</strong>, <strong>Admin</strong>, and <strong>Security Guard</strong> interfaces with role-based access control using <strong>Firebase Authentication</strong>, including resident home and administrator dashboard workflows.</li>
+      </ul>
+    </div>
+
+    <div class="case-study-section">
+      <h2>Result</h2>
+      <p>Residents, administrators, and gate security use role-specific workflows, including QR-based visitor checks at the entrance. Room DAOs keep core society information available offline while Firestore provides the connected data layer.</p>
+    </div>
+
+    <div class="case-study-section">
+      <h2>Explore More</h2>
+      <p><a href="../projects.html">Browse all projects</a> or <a href="../about.html">learn more about my experience</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Mohd Zahid</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="https://github.com/TheLegendZK">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/thelegendz">LinkedIn</a></li>
+          <li><a href="mailto:zahidkamil505@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <dialog class="image-viewer" aria-label="Full-size screenshot">
+    <img alt="">
+    <p></p>
+  </dialog>
+  <script src="../gallery-viewer.js" defer></script>
+</body>
+</html>

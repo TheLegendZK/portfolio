@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SplitPay - Mohd Zahid</title>
+  <meta name="description" content="Case study of SplitPay, a real-time group expense and debt simplification app built with Flutter and Firebase.">
+  <meta property="og:title" content="SplitPay - Mohd Zahid">
+  <meta property="og:description" content="Case study of SplitPay, a real-time group expense and debt simplification app built with Flutter and Firebase.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header>
+    <div class="container">
+      <a href="../index.html" class="site-title">Mohd Zahid</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <a class="breadcrumb" href="../projects.html"><span aria-hidden="true">&larr;</span>&nbsp; All projects</a>
+    <h1>SplitPay</h1>
+    <p class="tags">Flutter, Dart, Riverpod, Firebase</p>
+    <div class="hero-actions">
+      <a href="https://github.com/TheLegendZK/SplitPay" class="btn">View source on GitHub</a>
+      <a href="mailto:zahidkamil505@gmail.com?subject=SplitPay%20demo%20request" class="text-link">Request a demo</a>
+    </div>
+    
+    <h2>App Screenshots</h2>
+    <div class="image-gallery">
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Groups screenshot">
+          <img src="../assets/img/splitpay_groups.png" alt="SplitPay groups screen showing a list of groups" width="1080" height="2400" loading="eager" fetchpriority="high" decoding="async">
+        </button>
+        <figcaption>Groups</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Create a group screenshot">
+          <img src="../assets/img/splitpay_create_group_modal.png" alt="SplitPay new group creation screen with phone number search" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Create a group</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Add a member screenshot">
+          <img src="../assets/img/splitpay_add_member_modal.png" alt="SplitPay modal for adding a member to a group" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Add a member</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Group expenses screenshot">
+          <img src="../assets/img/splitpay_expenses.png" alt="SplitPay expenses tab showing dinner and snacks expenses" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Group expenses</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Expense dashboard screenshot">
+          <img src="../assets/img/splitpay_dashboard.png" alt="SplitPay dashboard showing total expenses and split shares" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Expense dashboard</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Settlements screenshot">
+          <img src="../assets/img/splitpay_settlements.png" alt="SplitPay settlements tab showing a pending debt to mark settled" width="1080" height="2400" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Settlements</figcaption>
+      </figure>
+    </div>
+
+    <div class="case-study-section">
+      <h2>Problem</h2>
+      <p>Keeping track of shared expenses across a group can make it difficult to see who owes what and how to settle up. SplitPay centralizes group expenses and calculates simplified balances.</p>
+    </div>
+
+    <div class="case-study-section">
+      <h2>What I Did</h2>
+      <ul>
+        <li>Architected a <strong>Feature-First Clean Architecture</strong> (auth, groups, group_detail, settlements) using <strong>Riverpod</strong> reactive streams and controllers to manage real-time group expenses and invitations.</li>
+        <li>Engineered a <strong>Greedy Debt-Simplification Algorithm</strong> (SettlementCalculator) that computes net balances and minimizes total peer-to-peer transactions, supporting <strong>weighted headcount shares</strong> (e.g., 1x solo vs. 2x couple splits).</li>
+        <li>Implemented <strong>atomic Firestore WriteBatch operations</strong> for group creation, invitation lifecycle management, and cascading deletes, backed by custom <strong>Firestore Security Rules</strong> enforcing authenticated Role-Based Access Control.</li>
+        <li>Built a custom reusable widget library (SplitPayCard, AsyncElevatedButton, SplitPayModalSheet) featuring creator-verified swipe-to-delete (Dismissible) with instant SnackBar undo restoration and unit tests verifying settlement math.</li>
+      </ul>
+    </div>
+
+    <div class="case-study-section">
+      <h2>Result</h2>
+      <p>The greedy debt-simplification algorithm consolidates a complex group tab into a minimal set of peer-to-peer settlements, reducing unnecessary repayments while supporting weighted shares. Custom Firestore security rules restrict expense edits to authorized group members.</p>
+    </div>
+
+    <div class="case-study-section">
+      <h2>Explore More</h2>
+      <p><a href="../projects.html">Browse all projects</a> or <a href="../about.html">learn more about my experience</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Mohd Zahid</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="https://github.com/TheLegendZK">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/thelegendz">LinkedIn</a></li>
+          <li><a href="mailto:zahidkamil505@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <dialog class="image-viewer" aria-label="Full-size screenshot">
+    <img alt="">
+    <p></p>
+  </dialog>
+  <script src="../gallery-viewer.js" defer></script>
+</body>
+</html>

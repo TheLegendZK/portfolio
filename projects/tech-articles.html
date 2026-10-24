@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Articles App Case Study - Mohd Zahid</title>
+  <meta name="description" content="Explore Tech Articles, a responsive Flutter and DEV.to client with tag filtering, bookmarks, offline caching, and adaptive layouts.">
+  <meta property="og:title" content="Tech Articles App Case Study - Mohd Zahid">
+  <meta property="og:description" content="A responsive Flutter and DEV.to client with tag filtering, bookmarks, offline caching, and adaptive layouts.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="../index.html" class="site-title">Mohd Zahid</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <a class="breadcrumb" href="../projects.html"><span aria-hidden="true">&larr;</span>&nbsp; All projects</a>
+    <h1>Tech Articles</h1>
+    <p class="tags">Flutter, Dart, Riverpod, DEV.to REST API</p>
+    <div class="hero-actions">
+      <a href="https://github.com/TheLegendZK/Tech-Articles" class="btn">View source on GitHub</a>
+      <a href="mailto:zahidkamil505@gmail.com?subject=Tech%20Articles%20demo%20request" class="text-link">Request a demo</a>
+    </div>
+
+    <h2>App Screenshots</h2>
+    <div class="image-gallery">
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Bookmarked articles screenshot">
+          <img src="../assets/img/tech_articles_bookmarks.jpg" alt="Tech Articles app showing bookmarked articles" width="960" height="2133" loading="eager" fetchpriority="high" decoding="async">
+        </button>
+        <figcaption>Bookmarked articles</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Desktop layout screenshot">
+          <img src="../assets/img/tech_articles_desktop_view.jpg" alt="Tech Articles app home feed with a grid layout on a desktop" width="960" height="600" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Desktop layout</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Phone layout screenshot">
+          <img src="../assets/img/tech_articles_phone_view.jpg" alt="Tech Articles app home feed with a single-column list on a mobile device" width="960" height="2133" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Phone layout</figcaption>
+      </figure>
+      <figure>
+        <button class="gallery-image-button" type="button" aria-label="Enlarge Tablet layout screenshot">
+          <img src="../assets/img/tech_articles_tablet_view.jpg" alt="Tech Articles app home feed on a tablet" width="960" height="800" loading="lazy" decoding="async">
+        </button>
+        <figcaption>Tablet layout</figcaption>
+      </figure>
+    </div>
+
+    <section class="case-study-section">
+      <h2>Problem</h2>
+      <p>Finding relevant developer articles and returning to saved reads can be cumbersome across devices and network conditions. Tech Articles brings a tag-filtered DEV.to feed and saved articles into one responsive client.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>What I Did</h2>
+      <ul>
+        <li>Developed a cross-platform developer news client consuming the <strong>DEV.to REST API</strong> with tag-based filtering, infinite-scroll pagination (ScrollController), and derived <strong>Riverpod</strong> providers for real-time search filtering.</li>
+        <li>Designed an <strong>offline-first caching layer</strong> using SharedPreferences and JSON serialization to persist bookmarked articles and cache the home feed for seamless offline reading with automatic retry banners.</li>
+        <li>Built an <strong>Adaptive Layout</strong> (LayoutBuilder + MediaQuery.textScalerOf) that dynamically transitions between a single-column mobile ListView and a multi-column tablet/desktop GridView without render overflows.</li>
+        <li>Wrote automated <strong>Unit and Widget Tests</strong> (flutter_test) validating null-safe JSON deserialization and reactive bookmark state toggling.</li>
+      </ul>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Result</h2>
+      <p>Combining <strong>LayoutBuilder</strong> with <strong>MediaQuery.textScalerOf</strong> eliminated render overflows across phone, tablet, and desktop viewports, from 960&times;600 to 960&times;2133. Local JSON caching keeps bookmarked reads accessible completely offline.</p>
+    </section>
+
+    <section class="case-study-section">
+      <h2>Explore More</h2>
+      <p><a href="../projects.html">Browse all projects</a> or <a href="../about.html">learn more about my experience</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Mohd Zahid</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="https://github.com/TheLegendZK">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/thelegendz">LinkedIn</a></li>
+          <li><a href="mailto:zahidkamil505@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <dialog class="image-viewer" aria-label="Full-size screenshot">
+    <img alt="">
+    <p></p>
+  </dialog>
+  <script src="../gallery-viewer.js" defer></script>
+</body>
+</html>
