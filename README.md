@@ -4,9 +4,9 @@ Personal portfolio showcasing cross-platform Flutter apps and native Android pro
 
 ## Featured Projects
 
-- **[SplitPay](projects/splitpay.html)** — A group expense app built with Flutter, Riverpod, and Firebase. It tracks shared expenses and simplifies balances into settlements.
-- **[Tech Articles](projects/tech-articles.html)** — A responsive Flutter reader for DEV.to, with tag filtering, bookmarks, and offline caching.
-- **[SocioNet](projects/socionet.html)** — A native Android residential community app built with Kotlin, Jetpack Compose, and Firebase, with role-based resident, admin, and security workflows.
+- **[SplitPay](https://github.com/TheLegendZK/SplitPay)** — A group expense app built with Flutter, Riverpod, and Firebase. It tracks shared expenses and simplifies balances into settlements.
+- **[Tech Articles](https://github.com/TheLegendZK/Tech-Articles)** — A responsive Flutter reader for DEV.to, with tag filtering, bookmarks, and offline caching.
+- **[SocioNet](https://github.com/TheLegendZK/SocioNet_A-Society-Management-System)** — A native Android residential community app built with Kotlin, Jetpack Compose, and Firebase, with role-based resident, admin, and security workflows.
 
 Visit the [projects page](projects.html) to browse the case studies and screenshots, or read more [about me](about.html).
 
